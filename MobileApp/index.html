@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Styles-->
+    <link rel="stylesheet" href="/MobileApp/styles/style.css" />
+    <!--FontAwsome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/MobileApp/styles/magnific-popup.css" />
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Jquery-->
+    <!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/MobileApp/Javascript/jquery.magnific-popup.min.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body>
+      <!-- Header-->
+    <div class="topnav">
+      <a href="#" class="logo">
+        <span>Logo</span>
+        <svg
+          width="20"
+          height="20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M19.198 10.436a.313.313 0 0 0-.363.06 6.095 6.095 0 0 1-4.36 1.827h-.007a6.125 6.125 0 0 1-3.529-11.13.313.313 0 0 0-.15-.567.39.39 0 0 0-.13-.004 8.79 8.79 0 0 0-7.57 13.257c.075-.06.15-.121.23-.176a3.757 3.757 0 0 1 5.485 1.342c.195.36.327.75.389 1.155l.002.014a3.174 3.174 0 0 1 1.631 2.004 8.853 8.853 0 0 0 8.54-7.456.312.312 0 0 0-.168-.326Z"
+            fill="#000"
+          />
+          <path
+            d="M8.613 16.644a3.773 3.773 0 0 0-.037-.344 2.954 2.954 0 0 0-.326-.967A3.12 3.12 0 0 0 5.47 13.65h-.004a3.11 3.11 0 0 0-1.793.567 3.16 3.16 0 0 0-1.346 2.435 2.566 2.566 0 0 0-1.698 2.42.313.313 0 0 0 .312.312l9.063-.01a.311.311 0 0 0 .313-.314 2.566 2.566 0 0 0-1.705-2.415Z"
+            fill="#000"
+          />
+        </svg>
+      </a>
+      <div id="myLinks">
+        <div class="link">
+          <a href="">Link1</a>
+          <div class="dropdown-content">
+            <a href="">Link a</a>
+            <a href="">Link b</a>
+            <a href="">Link c</a>
+          </div>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="toggleDiv()">
+              <i
+                class="fa fa-caret-down"
+                onclick="flipIcon(this)"
+                style="color: black"
+              ></i>
+            </button>
+          </div>
+        </div>
+        <div class="link">
+          <a href="">Link2</a>
+        </div>
+        <div class="link">
+          <a href="">Link3</a>
+        </div>
+        <div class="link">
+          <a href="">Link4</a>
+        </div>
+        <div class="link">
+          <a href="">Link5</a>
+        </div>
+        <div class="link">
+          <a href="">Link6</a>
+        </div>
+        <div class="link">
+          <a href="">Link7</a>
+        </div>
+        <div class="link">
+          <a href="">Link8</a>
+        </div>
+        <div class="link">
+          <a href="">Link9</a>
+        </div>
+        <div class="link">
+          <a href="">Link10</a>
+        </div>
+        <div class="link">
+          <a href="">Link11</a>
+        </div>
+        <div class="link">
+          <a href="">Link12</a>
+        </div>
+      </div>
+      <div class="container" onclick="flipIcon(this)">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </a>
+      </div>
+    </div>
+
+    <!--Hero-->
+    <div>
+      <div class="hscroll">
+        <button
+          class="tablink"
+          onclick="openSection('Sekce1', this, '')"
+          id="defaultOpen"
+        >
+          Velmi Dlouhá Sekce
+        </button>
+        <button class="tablink" onclick="openSection('Sekce2', this, '')">
+          Krátká sekce
+        </button>
+        <button class="tablink" onclick="openSection('Sekce3', this, '')">
+          Jiná sekce
+        </button>
+        <button class="tablink" onclick="openSection('Sekce4', this, '')">
+          Sekce
+        </button>
+        <button class="tablink" onclick="openSection('Sekce5', this, '')">
+          Velmi Dlouhá Sekce
+        </button>
+        <button class="tablink" onclick="openSection('Sekce6', this, '')">
+          Sekce
+        </button>
+        <button class="tablink" onclick="openSection('Sekce7', this, '')">
+          Dlouhá Sekce
+        </button>
+        <button class="tablink" onclick="openSection('Sekce8', this, '')">
+          Sekce
+        </button>
+      </div>
+
+      <div id="Sekce1" class="tab-content">
+        <a href="#">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui?
+          </h1>
+          <img
+            src="https://images.unsplash.com/photo-1640816810686-bf3bf9b5c35e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="unsplash"
+          />
+          <p><cite>Grenoble, France</cite> foto: Marc Wieland.</p>
+        </a>
+        <div>
+          <aside>
+            <img src="http://i.pravatar.cc/300" alt="Avatar of Author" />
+            <a class="tab-profile-img" href="http://i.pravatar.cc/300"
+              >Tomáš Malátný</a
+            ><span>03/01/2022</span>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui?
+            Suscipit amet illo molestiae dolorum, praesentium non. Vel veniam
+            perferendis modi ab sit minus magni neque officia, aliquam, adipisci
+            debitis! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Laborum, maxime? Sequi tempora repellat quos ratione delectus eum ex
+            aperiam, perspiciatis, temporibus et magni exercitationem eveniet
+            consequatur quod sapiente maiores ab!.
+          </p>
+        </div>
+      </div>
+
+      <div id="Sekce2" class="tab-content">
+        <a href="">
+          <h1>Lorem ipsum dolor sit amet consectetur?</h1>
+          <img
+            src="https://images.unsplash.com/photo-1512263121743-431e8f651fdc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1285&q=80"
+            alt="Oskar Kadaksoo"
+          />
+          <p><cite>Grenoble, France</cite> foto: Oskar Kadaksoo</p>
+        </a>
+        <div>
+          <aside>
+            <img src="http://i.pravatar.cc/400" alt="Avatar of Author" />
+            <a class="tab-profile-img" href="http://i.pravatar.cc/300"
+              >Tomáš Malátný</a
+            ><span>03/01/2022</span>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            optio dolor voluptas eius aperiam, neque, quas at quidem
+            voluptatibus enim quibusdam quam deserunt. Amet hic laboriosam sit
+            aspernatur maiores tenetur.
+          </p>
+        </div>
+      </div>
+      <div id="Sekce3" class="tab-content">
+        <a href="">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui?
+          </h1>
+          <img
+            src="https://images.unsplash.com/photo-1641155785005-612f97706de1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+            alt="Oskar Kadaksoo"
+          />
+          <p><cite>Grenoble, France</cite> foto: Oskar Kadaksoo</p>
+        </a>
+        <div>
+          <aside>
+            <img src="http://i.pravatar.cc/100" alt="Avatar of Author" />
+            <a class="tab-profile-img" href="http://i.pravatar.cc/300"
+              >Tomáš Malátný</a
+            ><span>03/01/2022</span>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            optio dolor voluptas eius aperiam, neque, quas at quidem
+            voluptatibus enim quibusdam quam deserunt. Amet hic laboriosam sit
+            aspernatur maiores tenetur.
+          </p>
+        </div>
+      </div>
+      <div id="Sekce4" class="tab-content">
+        <a href="">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui?
+          </h1>
+          <img
+            src="https://images.unsplash.com/photo-1641177578070-b5d9c9c247a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1445&q=80"
+            alt="Oskar Kadaksoo"
+          />
+          <p><cite>Grenoble, France</cite> foto: Oskar Kadaksoo</p>
+        </a>
+        <div>
+          <aside>
+            <img src="http://i.pravatar.cc/200" alt="Avatar of Author" />
+            <a class="tab-profile-img" href="http://i.pravatar.cc/300"
+              >Tomáš Malátný</a
+            ><span>03/01/2022</span>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            optio dolor voluptas eius aperiam, neque, quas at quidem
+            voluptatibus enim quibusdam quam deserunt. Amet hic laboriosam sit
+            aspernatur maiores tenetur.
+          </p>
+        </div>
+      </div>
+      <div id="Sekce5" class="tab-content">
+        <a href="">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui?
+          </h1>
+          <img
+            src="https://images.unsplash.com/photo-1641157138219-d4d63111c955?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+            alt="Oskar Kadaksoo"
+          />
+          <p><cite>Grenoble, France</cite> foto: Oskar Kadaksoo</p>
+        </a>
+        <div>
+          <aside>
+            <img src="http://i.pravatar.cc/800" alt="Avatar of Author" />
+            <a class="tab-profile-img" href="http://i.pravatar.cc/300"
+              >Tomáš Malátný</a
+            ><span>03/01/2022</span>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            optio dolor voluptas eius aperiam, neque, quas at quidem
+            voluptatibus enim quibusdam quam deserunt. Amet hic laboriosam sit
+            aspernatur maiores tenetur.
+          </p>
+        </div>
+      </div>
+      <div id="Sekce6" class="tab-content">
+        <a href="">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui?
+          </h1>
+          <img
+            src="https://images.unsplash.com/photo-1586397148583-f5a6db7dff06?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1456&q=80"
+            alt="Oskar Kadaksoo"
+          />
+          <p><cite>Grenoble, France</cite> foto: Oskar Kadaksoo</p>
+        </a>
+        <div>
+          <aside>
+            <img src="http://i.pravatar.cc/700" alt="Avatar of Author" />
+            <a class="tab-profile-img" href="http://i.pravatar.cc/300"
+              >Tomáš Malátný</a
+            ><span>03/01/2022</span>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            optio dolor voluptas eius aperiam, neque, quas at quidem
+            voluptatibus enim quibusdam quam deserunt. Amet hic laboriosam sit
+            aspernatur maiores tenetur.
+          </p>
+        </div>
+      </div>
+      <div id="Sekce7" class="tab-content">
+        <a href="">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui?
+          </h1>
+          <img
+            src="https://images.unsplash.com/photo-1586419560964-5d8b6f9397d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            alt="Oskar Kadaksoo"
+          />
+          <p><cite>Grenoble, France</cite> foto: Oskar Kadaksoo</p>
+        </a>
+        <div>
+          <aside>
+            <img src="http://i.pravatar.cc/600" alt="Avatar of Author" />
+            <a class="tab-profile-img" href="http://i.pravatar.cc/300"
+              >Tomáš Malátný</a
+            ><span>03/01/2022</span>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            optio dolor voluptas eius aperiam, neque, quas at quidem
+            voluptatibus enim quibusdam quam deserunt. Amet hic laboriosam sit
+            aspernatur maiores tenetur.
+          </p>
+        </div>
+      </div>
+      <div id="Sekce8" class="tab-content">
+        <a href="">
+          <h1>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, qui?
+          </h1>
+          <img
+            src="https://images.unsplash.com/photo-1605947464623-cf29652e054e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+            alt="Oskar Kadaksoo"
+          />
+          <p><cite>Grenoble, France</cite> foto: Oskar Kadaksoo</p>
+        </a>
+        <div>
+          <aside>
+            <img src="http://i.pravatar.cc/500" alt="Avatar of Author" />
+            <a class="tab-profile-img" href="http://i.pravatar.cc/300"
+              >Tomáš Malátný</a
+            ><span>03/01/2022</span>
+          </aside>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+            optio dolor voluptas eius aperiam, neque, quas at quidem
+            voluptatibus enim quibusdam quam deserunt. Amet hic laboriosam sit
+            aspernatur maiores tenetur.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Sticky Bar-->
+    <div id="stickbar">
+      <a class="active" href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+      <a href="#">News</a>
+    </div>
+
+    <!--Karty s obsahem-->
+    <section class="multiple-content">
+      <div class="item1">
+        <h3>Nadpis obsahu</h3>
+        <a href="#">
+          <img
+            src="https://images.unsplash.com/photo-1641220839365-ba2da91c1368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80"
+          />
+        </a>
+        <svg>
+          <path
+            d="M19.16 2A6.29 6.29 0 0 0 11 1.41a6.27 6.27 0 0 0-8.16 9.48l6 6.05a3 3 0 0 0 4.24 0l6-6.05A6.27 6.27 0 0 0 19.16 2Zm-1.41 7.46-6 6a1 1 0 0 1-1.42 0l-6-6a4.29 4.29 0 0 1 0-6 4.27 4.27 0 0 1 6 0 1 1 0 0 0 1.42 0 4.27 4.27 0 0 1 6 6Z"
+            fill="currentcolor"
+          />
+        </svg>
+        <span>04.01.2022</span>
+      </div>
+      <div class="item2">
+        <a href="#">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+            explicabo provident maxime dicta eveniet recusandae fuga repellendus
+            nemo dolor consequuntur laborum hic, praesentium id labore atque
+            illum. Natus, animi.
+          </p>
+        </a>
+      </div>
+      <div class="item3">
+        <h3>Nadpis obsahu</h3>
+        <a href="#">
+          <img
+            src="https://images.unsplash.com/photo-1641251104055-7e41e303c24f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=626&q=80"
+          />
+        </a>
+        <svg>
+          <path
+            d="M19.16 2A6.29 6.29 0 0 0 11 1.41a6.27 6.27 0 0 0-8.16 9.48l6 6.05a3 3 0 0 0 4.24 0l6-6.05A6.27 6.27 0 0 0 19.16 2Zm-1.41 7.46-6 6a1 1 0 0 1-1.42 0l-6-6a4.29 4.29 0 0 1 0-6 4.27 4.27 0 0 1 6 0 1 1 0 0 0 1.42 0 4.27 4.27 0 0 1 6 6Z"
+            fill="currentcolor"
+          />
+        </svg>
+        <span>04.01.2022</span>
+      </div>
+      <div class="item4">
+        <a href="#">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+            explicabo provident maxime dicta eveniet recusandae fuga repellendus
+            nemo dolor consequuntur laborum hic, praesentium id labore atque
+            illum. Natus, animi.
+          </p>
+        </a>
+      </div>
+      <div class="item1">
+        <h3>Nadpis obsahu</h3>
+        <a href="#">
+          <img
+            src="https://images.unsplash.com/photo-1641232437256-06a51ee25b18?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+          />
+        </a>
+        <svg>
+          <path
+            d="M19.16 2A6.29 6.29 0 0 0 11 1.41a6.27 6.27 0 0 0-8.16 9.48l6 6.05a3 3 0 0 0 4.24 0l6-6.05A6.27 6.27 0 0 0 19.16 2Zm-1.41 7.46-6 6a1 1 0 0 1-1.42 0l-6-6a4.29 4.29 0 0 1 0-6 4.27 4.27 0 0 1 6 0 1 1 0 0 0 1.42 0 4.27 4.27 0 0 1 6 6Z"
+            fill="currentcolor"
+          />
+        </svg>
+        <span>04.01.2022</span>
+      </div>
+      <div class="item2">
+        <a href="#">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+            explicabo provident maxime dicta eveniet recusandae fuga repellendus
+            nemo dolor consequuntur laborum hic, praesentium id labore atque
+            illum. Natus, animi.
+          </p>
+        </a>
+      </div>
+      <div class="item3">
+        <h3>Nadpis obsahu</h3>
+        <a href="#">
+          <img
+            src="https://images.unsplash.com/photo-1641220839365-ba2da91c1368?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=640&q=80"
+          />
+        </a>
+        <svg>
+          <path
+            d="M19.16 2A6.29 6.29 0 0 0 11 1.41a6.27 6.27 0 0 0-8.16 9.48l6 6.05a3 3 0 0 0 4.24 0l6-6.05A6.27 6.27 0 0 0 19.16 2Zm-1.41 7.46-6 6a1 1 0 0 1-1.42 0l-6-6a4.29 4.29 0 0 1 0-6 4.27 4.27 0 0 1 6 0 1 1 0 0 0 1.42 0 4.27 4.27 0 0 1 6 6Z"
+            fill="currentcolor"
+          />
+        </svg>
+        <span>04.01.2022</span>
+      </div>
+      <div class="item4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil
+          explicabo provident maxime dicta eveniet recusandae fuga repellendus
+          nemo dolor consequuntur laborum hic, praesentium id labore atque
+          illum. Natus, animi.
+        </p>
+      </div>
+    </section>
+
+    <!--Tabulka-->
+    <div class="table-box">
+      <h3>Tabulka</h3>
+     
+      <table>
+        <tr>
+          <th>Jméno</th>
+          <th>Příjmení</th>
+          <th>Body</th>
+          <th>Body</th>
+          <th>Body</th>
+          <th>Body</th>
+          <th>Body</th>
+          <th>Body</th>
+          <th>Body</th>
+          <th>Body</th>
+          <th>Body</th>
+          <th>Body</th>
+        </tr>
+        <tr>
+          <td>Tomáš</td>
+          <td>Malý</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Antonín</td>
+          <td>Drtikol</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+          <td>94</td>
+        </tr>
+        <tr>
+          <td>Bohumila</td>
+          <td>Nejezchlebová</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+        </tr>
+        <tr>
+          <td>Ivan</td>
+          <td>Krychle</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+          <td>67</td>
+        </tr>
+      </table>
+    </div>
+
+    <!--Galerie-->
+    <div class="gallery">
+      <h3 class="popup-text">Galerie</h3>
+      <div class="popup-gallery">
+        <a
+          href="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_b.jpg"
+          title="The Cleaner"
+          ><img
+            src="http://farm9.staticflickr.com/8242/8558295633_f34a55c1c6_s.jpg"
+            width="75"
+            height="75"
+        /></a>
+        <a
+          href="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_b.jpg"
+          title="Winter Dance"
+          ><img
+            src="http://farm9.staticflickr.com/8382/8558295631_0f56c1284f_s.jpg"
+            width="75"
+            height="75"
+        /></a>
+        <a
+          href="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_b.jpg"
+          title="The Uninvited Guest"
+          ><img
+            src="http://farm9.staticflickr.com/8225/8558295635_b1c5ce2794_s.jpg"
+            width="75"
+            height="75"
+        /></a>
+        <a
+          href="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_b.jpg"
+          title="Oh no, not again!"
+          ><img
+            src="http://farm9.staticflickr.com/8383/8563475581_df05e9906d_s.jpg"
+            width="75"
+            height="75"
+        /></a>
+        <a
+          href="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_b.jpg"
+          title="Swan Lake"
+          ><img
+            src="http://farm9.staticflickr.com/8235/8559402846_8b7f82e05d_s.jpg"
+            width="75"
+            height="75"
+        /></a>
+        <a
+          href="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_b.jpg"
+          title="The Shake"
+          ><img
+            src="http://farm9.staticflickr.com/8235/8558295467_e89e95e05a_s.jpg"
+            width="75"
+            height="75"
+        /></a>
+        <a
+          href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg"
+          title="Who's that, mommy?"
+          ><img
+            src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg"
+            width="75"
+            height="75"
+        /></a>
+        <a
+          href="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_b.jpg"
+          title="Who's that, mommy?"
+          ><img
+            src="http://farm9.staticflickr.com/8378/8559402848_9fcd90d20b_s.jpg"
+            width="75"
+            height="75"
+        /></a>
+      </div>
+    </div>
+
+    <!--Článek-->
+    <div class="article">
+      <h3 >Obsah článku</h3>
+      <div class="zoom-gallery">
+        <a
+          href="http://farm4.staticflickr.com/3763/9204547649_0472680945_o.jpg"
+          data-source="http://500px.com/photo/32736307"
+          title="Into The Blue"
+          style="width: 300px"
+        >
+          <img
+            src="http://farm4.staticflickr.com/3763/9204547649_7de96ee188_t.jpg"
+          />
+        </a>
+        <a
+          href="http://farm3.staticflickr.com/2856/9207329420_7f2a668b06_o.jpg"
+          data-source="http://500px.com/photo/32554131"
+          title="Light Sabre"
+          style="width: 82px; height: 125px; display: none"
+        >
+          <img
+            src="http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg"
+            width="82px"
+            height="125"
+          />
+        </a>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+        numquam saepe odio nihil culpa eos doloribus, in officiis iste rem dolor
+        iure deserunt quas mollitia explicabo doloremque error dolorem!
+        Exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dignissimos, rerum ab dolor repellat sint veniam eaque magnam error odit
+        dolorum quia provident harum tenetur nostrum? Possimus rem vitae omnis
+        quo?
+      </p>
+      <br/>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
+        numquam saepe odio nihil culpa eos doloribus, in officiis iste rem dolor
+        iure deserunt quas mollitia explicabo doloremque error dolorem!
+        Exercitationem? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dignissimos, rerum ab dolor repellat sint veniam eaque magnam error odit
+        dolorum quia provident harum tenetur nostrum? Possimus rem vitae omnis
+        quo?
+      </p>
+    </div>
+
+    <div class="form-container">
+        <form action="/action_page.php">
+            <div class="row">
+              <div class="col-25">
+                <label for="fname">First Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="lname">Last Name</label>
+              </div>
+              <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              </div>
+            </div>
+                <div class="row">
+              <div class="col-25">
+                <label for="fname">Email</label>
+              </div>
+              <div class="col-75">
+                <input type="email" id="email" name="email" placeholder="Your email..">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="country">Country</label>
+              </div>
+              <div class="col-75">
+                <select id="country" name="country">
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Subject</label>
+              </div>
+              <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+      </div>
+      
+    <!--Footer-->
+    <footer>
+      <p>Footer</p>
+    </footer>
+    <script src="/MobileApp/Javascript/script.js"></script>
+  </body>
+</html>
